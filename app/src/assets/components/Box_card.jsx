@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import style from "../css/Box_card.module.scss"
-import Number_card from "./Number_card";
+import { useParams } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate  } from 'react-router-dom';
 
 const Box_card = ({ num }) => {
     const [ex, setEx] = useState([])
@@ -247,7 +248,7 @@ const Box_card = ({ num }) => {
         <>
             {!win &&
                 <>
-                    <div className={style.button}>New Game</div>
+                    <Link to="/" className={style.button}>New Game</Link>
                     <div className={`${style.button} ${style.confirm}`}
                         onClick={() => {
                             if (soduku_check(ex)) setWin(true);
@@ -261,7 +262,7 @@ const Box_card = ({ num }) => {
             {
                 win &&
                 <>
-                    <div className={style.button}>Play Again?</div>
+                    <Link to="/" className={style.button}>Play Again?</Link>
                     <div className={`${style.button} ${style.confirm} ${style.win}` }
                         onClick={() => {
                             if (soduku_check(ex)) setWin(true);

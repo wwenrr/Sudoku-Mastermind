@@ -1,0 +1,77 @@
+.nav {
+    position: relative;
+    width: 10%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 20vh;
+    border-radius: 40px;
+    // background: linear-gradient(135deg, #b0e57c, #ffebcd);
+
+    .dif {
+        // background-color: red;
+        display: flex;
+        justify-content: center;
+        font-size: 5vw;
+        flex-wrap: wrap;
+        text-align: center;
+
+        img {
+            margin-top: 5vh;
+            border: black 0.2vw solid;
+        }
+
+        .mode {
+            padding-left: 2vw;
+            padding-right: 2vw;
+            font-size: 3vw;
+            margin-top: 5vh;
+            background-color: aquamarine;
+            border-radius: 30px;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+            cursor: pointer;
+            color: black;
+        }
+
+        .mode:hover {
+            transform: scale(1.1); /* Phóng to nhẹ khi hover */
+            background-color: lightseagreen; /* Thay đổi màu nền khi hover */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ khi hover */
+        }
+        
+        /* Hiệu ứng khi nhấn */
+        .mode:active {
+            transform: scale(0.95); /* Thu nhỏ phần tử khi nhấn */
+            background-color: darkcyan; /* Thay đổi màu nền khi nhấn */
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Thay đổi bóng đổ khi nhấn */
+        }
+    }
+}
+
+.navigate {
+    width: 40vw;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    display: flex;
+    justify-content: space-between;
+    // background-color: red;
+
+    .left, .right{
+        cursor: pointer;
+    }
+
+    .left:hover, .right:hover {
+        transform: scale(1.1); 
+        background-color: antiquewhite; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        border-radius: 100%; 
+    }
+    
+    .left:active , .right:active {
+        transform: scale(0.95); 
+        background-color: antiquewhite;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); 
+        border-radius: 100%; 
+    }
+}

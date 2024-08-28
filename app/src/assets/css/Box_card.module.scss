@@ -202,3 +202,16 @@ button:hover {
     font-size: 5rem;
     background-color: white;
 }
+
+.button:hover {
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+    background-color: lightseagreen; /* Thay đổi màu nền khi hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ khi hover */
+}
+
+/* Hiệu ứng khi nhấn */
+.button:active {
+    transform: scale(0.95); /* Thu nhỏ phần tử khi nhấn */
+    background-color: darkcyan; /* Thay đổi màu nền khi nhấn */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Thay đổi bóng đổ khi nhấn */
+}
