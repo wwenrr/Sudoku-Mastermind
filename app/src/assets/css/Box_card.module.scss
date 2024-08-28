@@ -1,0 +1,204 @@
+.box9 {
+    width: 47vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .small_box {
+        height: auto;
+        display: flex;
+        background-color: red;
+        width: 15vw;
+        flex-wrap: wrap;
+        box-sizing: content-box;
+        border: 0.2vw solid #161616;
+        justify-content: center;
+
+        .box {
+            width: 5vw;
+            height: 5vw;
+            background-color: antiquewhite;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0.2vw solid grey;
+            box-sizing: border-box;
+        
+            span {
+                font-size: 2vw;
+            }
+        }
+    }
+}
+
+.cant {
+    font-weight: 800;
+    color: rgb(244, 21, 21);
+}
+
+.box6 {
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2vh;
+
+    .small_box {
+        display: flex;
+        background-color: red;
+        width: 21vw;
+        flex-wrap: wrap;
+        box-sizing: content-box;
+        border: 0.2vw solid #161616;
+        justify-content: center;
+        height: auto;
+
+        .box {
+            width: 7vw;
+            height: 7vw;
+            background-color: antiquewhite;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0.2vw solid grey;
+            box-sizing: border-box;
+        
+            span {
+                font-size: 2vw;
+            }
+        }
+    }
+}
+
+.box3 {
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 0.5vh;
+    margin-top: 2vh;
+    
+
+    .small_box {
+        display: flex;
+        background-color: red;
+        width: 42vw;
+        flex-wrap: wrap;
+        box-sizing: content-box;
+        border: 0.2vw solid #161616;
+        justify-content: center;
+        height: auto;
+
+        .box {
+            width: 14vw;
+            height: 14vw;
+            background-color: antiquewhite;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0.2vw solid grey;
+            box-sizing: border-box;
+        
+            span {
+                font-size: 4.5vw;
+            }
+        }
+    }
+}
+
+.button {
+    background-color: gray;
+    display: flex;
+    margin: auto;
+    height: 5vw;
+    width: 25vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    position: absolute;
+    border-radius: 20px;
+    padding: 10px;
+    transition: opacity 0.2s; 
+    cursor: pointer;
+    right: 0;
+    top: 40%;
+    right: 15%;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+.confirm {
+    top: 20%;
+}
+
+.new_game:active {
+    opacity: 75%;
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    .box3, .box6, .box9 {
+        margin: auto;
+        margin-top: 50vh;
+    }
+
+    .button {
+        background-color: gray;
+        display: flex;
+        margin: auto;
+        height: 5vw;
+        width: 25vw;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        font-size: 4vw;
+        position: absolute;
+        border-radius: 20px;
+        padding: 10px;
+        transition: opacity 0.3s ease; 
+        cursor: pointer;
+        right: 0;
+        top: 25%;
+        left: 0;
+        padding: 20px;
+        width: 170px;
+    }
+
+    .confirm {
+        top: 9vh;
+        left: 0;
+        right: 0;
+        
+    }
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+/* Áp dụng hiệu ứng cho hình ảnh */
+.shake {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.win {
+    font-size: 5rem;
+    background-color: white;
+}

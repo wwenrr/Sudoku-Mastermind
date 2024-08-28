@@ -1,0 +1,15 @@
+.box {
+    // width: 5vw;
+    // height: 5vw;
+    background-color: antiquewhite;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2vw solid grey;
+    box-sizing: border-box;
+
+    span {
+        font-size: 2vw;
+    }
+}
