@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Sudoku-Mastermind/static/css/main.b156b680.css",
+    "main.js": "/Sudoku-Mastermind/static/js/main.ea1c4d2c.js",
+    "index.html": "/Sudoku-Mastermind/index.html",
+    "main.b156b680.css.map": "/Sudoku-Mastermind/static/css/main.b156b680.css.map",
+    "main.ea1c4d2c.js.map": "/Sudoku-Mastermind/static/js/main.ea1c4d2c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b156b680.css",
+    "static/js/main.ea1c4d2c.js"
+  ]
+}
