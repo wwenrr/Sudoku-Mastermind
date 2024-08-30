@@ -76,7 +76,7 @@ function Home() {
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/Sudoku-Mastermind">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/game/:mode" element={<Number_card />} />
